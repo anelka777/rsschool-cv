@@ -1,4 +1,3 @@
- # Alena Danilchenko
 ## Front-end web developer
 ### Contact information:
 * Discord nickname: anelka777
