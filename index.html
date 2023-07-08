@@ -3,11 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Alena Danilchenko</h1>
-    <h2>Front-end web developer</h2>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container main-box" id="profile">
+            <div class="main-container-left">
+            <section class="section section-alena">
+                <img class="img" src="./photo.jpg" alt="photo" width="220">
+                <h1 class="name">ALENA DANILCHENKO</h1>
+                <h3 class="ocupation">FRONT-END <br> WEB DEVELOPER</h3>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts:</h2>
+                    <ul class="section-list">
+                        <li class="section-item">Sacramento, USA</li>
+                        <li class="section-item"><a href="mailto:yourclearvoice@gmail.com" title="email" target="_blank">yourclearvoice@gmail.com</a></li>
+                        <li class="section-item"><a href="https://www.linkedin.com/in/alena-danilchenko/" target="_blank">LinkedIn</a></li>
+                        <li class="section-item"><a href="https://github.com/anelka777" title="github" target="_blank">GitHub</a></li>
+                        <li class="section-item">Discord: anelka777</li>
+                        <li class="section-item"><a href="https://glitch.com/" target="_blank"></a> Glitch: @yourclearvoice</li>
+                    </ul>
+            </section>
+            <section class="section" id="skills">      
+                <h2 class="section-title">Skills:</h2>
+                    <ul class="section-list">
+                        <li class="section-item">HTML5</li>
+                        <li class="section-item">CSS3</li>
+                        <li class="section-item">Bootstrap 5.2</li>
+                        <li class="section-item">Figma</li>
+                        <li class="section-item">JavaScript (in progress)</li>
+                        <li class="section-item">Git</li>
+                        <li class="section-item">GitHub</li>
+                    </ul>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages:</h2>
+                    <ul class="section-list">
+                        <li class="section-item">English: B1</li>
+                        <li class="section-item">Russian: native speaker</li>
+                    </ul>
+            </section>
+        </div>
+        <div class="main-container-right">
+            <section class="section" id="about">
+                <h2 class="section-title">About me:</h2>
+                <p>I have a dream… <br>
+                    After 3 years experience of working in an IT company as an administrator of a website I decided to become a frontend web developer.</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education:</h2>
+                    <ul class="section-list">
+                        <li class="section-item">Yanka Kupala State University of Grodno</li>
+                        <li class="section-item">CanSheCode courses:
+                            <ul>
+                                <li>HTML5 / CSS3</li>
+                                <li>Bootstrap 5.2</li>
+                                <li>Figma</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+            <section class="section" id="experience">    
+                <h2 class="section-title">Experience:</h2>
+                    <ul class="section-list">
+                        <li class="section-item"><a href="https://www.belabios.com">BelaBios</a>
+                            <ul>
+                                <li class="section-item">computer operator</li>
+                                <li class="section-item">site administrator (updating content, user support and ect. of <a href="https://www.musicaneo.com" target="_blank">www.musicaneo.com</a>)</li>
+                            </ul>
+                        <li class="section-item">I have my pet projects on <a href="https://glitch.com/" target="_blank">glitch.com</a></li>
+                    </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code example:</h2>
+                <pre>
+                <code class="code">
+                let text = "I am a web developer...";
+                let i = 0;
+                let speed = 100;
+                function type() {
+                    if (i < text.length) {
+                    document.querySelector("#par").textContent
+                    += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                    }
+                }
+                type()    
+                    </code>
+                </pre>
+            </section>
+            </div> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <a class="my-github" href="https://github.com/anelka777" target="_blank"><img src="./github.png" alt="github icon" width="25"> My GitHub
+            </a>
+            <p> © 2023</p>
+            <a class="link" href="https://rs.school/js-stage0/" target="_blank">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="RS School" width="100">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
