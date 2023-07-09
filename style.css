@@ -171,6 +171,7 @@ align-self: center;
         width: 50%;
     }
 
+
     .main-box {
         flex-direction: column;
         flex-wrap: wrap;
@@ -185,12 +186,23 @@ align-self: center;
     }
 
     body {
-    min-width: 80vh;
-}
+    min-width: 90vh;
+    }
 
-.container .footer-container{
-    font-size: small;
-    flex-direction: column;
-    align-self: center;   
-}
+    .main-container-left {
+        width: auto;
+        background-color: #f3f4f5;
+        margin: 0;
+    }
+    
+    
+    .main-container-right {
+        width: auto; 
+    }
+
+    .container .footer-container{
+        font-size: small;
+        flex-direction: column;
+        align-self: center;   
+    }
 }
