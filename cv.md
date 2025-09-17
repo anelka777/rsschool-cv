@@ -1,5 +1,5 @@
 # Alena Danilchenko
-## Front-end web developer
+## Full-stack web developer
 ### Contact information:
 * Discord nickname: anelka777
 * Email: yourclearvoice@gmail.com
