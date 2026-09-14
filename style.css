@@ -1,0 +1,270 @@
+:root {
+    --bg: #f7f8f6;
+    --surface: #ffffff;
+    --ink: #16202b;
+    --muted: #5b6b72;
+    --accent: #2f6f5e;
+    --accent-soft: #e4efe9;
+    --line: #dce1de;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Inter", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", Consolas, "SFMono-Regular", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 56px 0 40px;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.site-header h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+}
+
+.tagline {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #9fb3ac;
+    margin: 0 0 28px;
+}
+
+.section-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 4px;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.section-nav a {
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border: 1px solid #3c4a55;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.section-nav a:hover {
+    border-color: var(--accent);
+    background: rgba(47, 111, 94, 0.35);
+}
+
+.contacts {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.contacts a {
+    color: var(--bg);
+}
+
+.contacts span {
+    color: #cfd9d5;
+}
+
+/* ---------- Main ---------- */
+
+main .wrap {
+    padding-top: 8px;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 0 18px;
+}
+
+blockquote {
+    margin: 0 0 16px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--muted);
+}
+
+#about p {
+    margin: 0;
+    max-width: 62ch;
+}
+
+.chip-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.chip-list li {
+    background: var(--accent-soft);
+    color: #1f5347;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.92rem;
+    font-family: var(--font-mono);
+}
+
+#education ul,
+#languages ul,
+#experience > .wrap ul,
+#experience ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#education li,
+#languages li,
+#experience li {
+    margin-bottom: 8px;
+}
+
+#experience ul ul {
+    margin-top: 8px;
+}
+
+pre {
+    background: var(--ink);
+    color: #e3ece8;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.88rem;
+}
+
+code {
+    font-family: var(--font-mono);
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.site-footer .wrap {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.88rem;
+}
+
+.site-footer a {
+    color: var(--bg);
+}
+
+.footer-year {
+    color: #9fb3ac;
+}
+
+.rs-logo-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 40px 0 32px;
+    }
+
+    .site-header h1 {
+        font-size: 2.1rem;
+    }
+
+    section {
+        padding: 32px 0;
+    }
+
+    .site-footer .wrap {
+        justify-content: center;
+        text-align: center;
+    }
+}
