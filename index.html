@@ -3,9 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Alena Danilchenko — Full-stack Web Developer CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="site-header">
+  <div class="wrap">
+    <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Alena D" width="112" height="112">    <h1>Alena Danilchenko</h1>
+    <p class="tagline">Full-stack web developer</p>
+
+    <nav aria-label="Section navigation" class="section-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+
+    <ul class="contacts">
+      <li>Discord: <span>anelka777</span></li>
+      <li><a href="mailto:yourclearvoice@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/alena-danilchenko">LinkedIn</a></li>
+      <li><a href="https://github.com/anelka777">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About me</h2>
+      <blockquote>I have a dream&hellip;</blockquote>
+      <p>After three years of experience working in an IT company as a website administrator, I decided to become a full-stack web developer.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="chip-list">
+        <li>HTML5, CSS3</li>
+        <li>Bootstrap 5.2</li>
+        <li>Figma</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Git / GitHub</li>
+        <li>React.js</li>
+        <li>Node.js / Express</li>
+      </ul>
+    </section>
+
+    <section id="code" aria-labelledby="code-heading">
+      <h2 id="code-heading">Code example</h2>
+      <pre><code>let text = "I am a web developer..."; // 23
+console.log(text.length);
+
+let i = 0;
+let speed = 100;
+
+function type() {
+  if (i &lt; text.length) {
+    document.querySelector("#par").textContent += text.charAt(i);
+    i++;
+    setTimeout(type, speed);
+  }
+}
+
+type();</code></pre>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul>
+        <li>Yanka Kupala State University of Grodno</li>
+        <li>CanSheCode courses — HTML5 / CSS3 / Bootstrap 5.2 / Figma / JavaScript</li>
+        <li>Code the Dream School — Full-stack development</li>
+      </ul>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <ul>
+        <li>
+          <a href="https://www.belabios.com">belabios.com</a>
+          <ul>
+            <li>Computer operator</li>
+            <li>Site administrator — updating content and user support for <a href="https://www.musicaneo.com/">musicaneo.com</a></li>
+          </ul>
+        </li>
+        <li>Personal pet projects hosted on <a href="https://glitch.com">Glitch.com</a></li>
+      </ul>
+    </section>
+
+    <section id="languages" aria-labelledby="languages-heading">
+      <h2 id="languages-heading">Languages</h2>
+      <ul>
+        <li>English — B2</li>
+        <li>Russian — native speaker</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="https://github.com/anelka777">github.com/anelka777</a>
+    <span class="footer-year">&copy; 2026 Alena Danilchenko</span>
+    <a href="https://rs.school/" class="rs-logo-link">
+      <img src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg" alt="RS School logo" width="90" height="24">
+    </a>
+  </div>
+</footer>
+
 </body>
 </html>
